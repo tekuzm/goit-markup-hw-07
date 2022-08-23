@@ -1,0 +1,14 @@
+@mixin font ($fs, $fw, $lh, $ls) {
+    font-size: $fs;
+	font-weight: $fw;
+	line-height: $lh;
+	letter-spacing: $ls;
+}
+
+@mixin position ($ps, $t, $l, $wd, $hg) {
+    position: $ps;
+    top: $t;
+    left: $l;
+	width: $wd;
+	height: $hg;
+}

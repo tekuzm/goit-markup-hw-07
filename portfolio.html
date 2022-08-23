@@ -9,40 +9,42 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
-		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="stylesheet" href="./css/main.min.css">
 	</head>
-	<body class="page">
+	<body>
 		<!-- Site nav -->
-		<header class="page-header">
+		<header class="header">
 			<div class="container">
-				<nav class="header-nav">
 				<!-- prettier-ignore -->
-				<a lang="en" href="./index.html" class="page-logo link">
-					<span class="page-blue-logo">Web</span>Studio
-				</a>	
-				<ul class="site-nav-list list">
-					<li class="nav-list-item">
-						<a href="./index.html" class="nav-list-link link">Studio</a>
-					</li>
-					<li class="nav-list-item">
-							<a href="./portfolio.html" class="nav-list-link link current">Portfolio</a>
-					</li>
-					<li class="nav-list-item">
-							<a href="" class="nav-list-link link">Contacts</a>
-					</li>
-				</ul>
+				<a lang="en" href="./index.html" class="link logo header__logo">
+					<span class="header__logo--blue">Web</span>Studio
+				</a>
+
+				<nav class="page-header__nav">	
+					<ul class="list navigation__list">
+						<li class="navigation__item">
+							<a href="./index.html" class="link navigation__link">Studio</a>
+						</li>
+						<li class="navigation__item">
+							<a href="./portfolio.html" class="link current navigation__link">Portfolio</a>
+						</li>
+						<li class="navigation__item">
+							<a href="" class="link navigation__link">Contacts</a>
+						</li>
+					</ul>
 				</nav>
-				<ul class="contacts-nav-list list">
-					<li class="contacts-list-item"><a href="mailto:info@devstudio.com" class="contacts-list-link link">
-						<svg class="contacts-icon mail">
+
+				<ul class="list contacts-list">
+					<li class="contacts-list__item"><a href="mailto:info@devstudio.com" class="link contacts-list__link">
+						<svg class="mail contacts-list__icon">
 							<use href="./images/icons.svg#icon-envelope" width="16" height="12"></use>
 						</svg>
-						info@devstudio.com</a></li>
-					<li class="contacts-list-item"><a href="tel:+380961111111" class="contacts-list-link link">
-						<svg class="contacts-icon phone">
+					info@devstudio.com</a></li>
+					<li class="contacts-list__item"><a href="tel:+380961111111" class="link contacts-list__link">
+						<svg class="phone contacts-list__icon">
 							<use href="./images/icons.svg#icon-smartphone" width="10" height="16"></use>
 						</svg>
-						+38 096 111 11 11</a></li>
+					+38 096 111 11 11</a></li>
 				</ul>
 			</div>
 		</header>
@@ -51,7 +53,7 @@
 			<section class="portfolio">
 				<div class="container">
 					<h1 class="visually-hidden">Portfolio</h1>
-					<ul class="filter-list list">
+					<ul class="list filter-list">
 						<li class="filter-item">
 							<button type="button" class="filter-btn btn">All</button>
 						</li>
@@ -166,22 +168,22 @@
 		</main>
 
 		<footer class="footer">
-			<div class="contact-wrap">
+			<div class="contacts-wrap">
 				<div class="container">
-					<div class="footer-contacts-wrap">
+					<div class="footer__contacts-wrap">
 						<!-- prettier-ignore -->
-						<a lang="en" href="./index.html" class="footer-logo link">
-							<span class="page-blue-logo">Web</span><span>Studio</span>
+						<a lang="en" href="./index.html" class="link logo footer__logo">
+							<span class="header__logo--blue">Web</span><span>Studio</span>
 						</a>
 						
 
 						<!-- Contacts -->
 						<h2 class="visually-hidden">Contacts</h2>
 						<address class="address">
-							<ul class="contacts-list list">
-								<li class="footer-contacts">
+							<ul class="list contacts-list contacts-footer-list">
+								<li class="contacts-footer-list__item">
 									<a
-											class="contacts-address link"
+											class="link contacts-footer-list__adress"
 											href="https://goo.gl/maps/21FP2kessVp6qN1R9"
 											target="_blank"
 											rel="noopener noreferrer nofollow"
@@ -189,46 +191,58 @@
 											Kyiv, Lesi Ukrainky Blvd, 26
 									</a>
 								</li>
-								<li class="footer-contacts">
-									<a href="mailto:info@example.com" class="footer-contacts-link link">info@example.com</a>
+								<li class="contacts-footer-list__item">
+									<a href="mailto:info@example.com" class="link contacts-footer-list__link">info@example.com</a>
 								</li>
-								<li class="footer-contacts"><a href="tel:+380991111111" class="footer-contacts-link link">+38 099 111 11 11</a></li>
+								<li class="contacts-footer-list__item"><a href="tel:+380991111111" class="link contacts-footer-list__link">+38 099 111 11 11</a></li>
 							</ul>
 						</address>
 					</div>
 
 					<div class="join">
-						<h2 class="join-soc-title title">Join us</h2>
-						<ul class="join-soc-list list">
-							<li class="join-soc-item">
-								<a href="" class="join-soc-link">
-									<svg class="join-soc-icon">
+						<h2 class="title join__title">Join us</h2>
+						<ul class="list join__list">
+							<li class="join__item">
+								<a href="" class="join__link">
+									<svg class="join__icon">
 										<use href="./images/icons.svg#icon-instagram"></use>
 									</svg>
 								</a>
 							</li>
-							<li class="join-soc-item">
-								<a href="" class="join-soc-link">
-									<svg class="join-soc-icon">
+							<li class="join__item">
+								<a href="" class="join__link">
+									<svg class="join__icon">
 										<use href="./images/icons.svg#icon-twitter"></use>
 									</svg>
 								</a>
 							</li>
-							<li class="join-soc-item">
-								<a href="" class="join-soc-link">
-									<svg class="join-soc-icon">
+							<li class="join__item">
+								<a href="" class="join__link">
+									<svg class="join__icon">
 										<use href="./images/icons.svg#icon-facebook"></use>
 									</svg>
 								</a>
 							</li>
-							<li class="join-soc-item">
-								<a href="" class="join-soc-link">
-									<svg class="join-soc-icon">
+							<li class="join__item">
+								<a href="" class="join__link">
+									<svg class="join__icon">
 										<use href="./images/icons.svg#icon-linkedin"></use>
 									</svg>
 								</a>
 							</li>
 						</ul>
+					</div>
+
+					<div class="subscribe">
+						<p class="title subscribe__title">Subscribe</p>
+						<form class="subscribe__form">
+							<input type="text" class="subscribe__input" name="subscribe-mail" placeholder="E-mail"/>
+						<button type="submit" class="btn subscribe__btn">Subscribe
+							<svg class="subscribe__icon">
+								<use href="./images/icons.svg#icon-send" width="24" height="24"></use>
+							</svg>
+						</button>
+						</form>
 					</div>
 				</div>
 			</div>

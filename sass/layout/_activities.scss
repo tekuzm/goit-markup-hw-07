@@ -1,0 +1,36 @@
+.activities {
+	padding-bottom: 94px;
+}
+
+.activities__title {
+	margin-bottom: 50px;
+}
+
+.activities__list {
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+}
+
+.activities__wrap {
+	position: relative;
+}
+
+.activities__text {
+	@include position (absolute, null, 0, 370px, 70px);
+	bottom: 0;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background: rgba(47, 48, 58, 0.8);
+
+	font-family: inherit;
+	font-style: normal;
+	@include font (14px, 700, 1.14, 0.03em);
+	text-align: center;
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+}

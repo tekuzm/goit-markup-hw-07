@@ -1,0 +1,20 @@
+.header__logo {
+	margin-right: 93px;
+
+	font-family: "Raleway", sans-serif;
+	@include font (26px, 700, 1.19, 0.03em);
+	color: var(--secondary-text-color);
+}
+
+.header__logo--blue {
+	color: var(--accent-color);
+}
+
+.footer__logo {
+	display: flex;
+	color: #ffffff;
+	margin-bottom: 20px;
+
+	font-family: "Raleway", sans-serif;
+	@include font (26px, 700, 1.19, 0.03em);
+}

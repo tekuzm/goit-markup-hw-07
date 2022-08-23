@@ -1,0 +1,14 @@
+.header {
+	@include position (fixed, 0, 0, 100%, null);
+	z-index: 100;
+
+	background-color: var(--primary-bg-color);
+	padding-top: 24px;
+	padding-bottom: 25px;
+	border: 1px solid #ECECEC;
+
+	.container {
+		display: flex;
+		align-items: center;
+	}
+}
